@@ -81,7 +81,29 @@
     <section>
         <h2>ЗАПИСАТЬСЯ</h2>
         <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ   С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-        <!--ФОрма записи-->
+
+        <form action="http://echo.htmlacademy.ru" method="POST">
+            <p>
+            <label for="appointment-date">Дата</label>
+            <input id="appointment-date" type="text" name="date" placeholder="01.01.2020">
+            </p>
+
+            <p>
+                <label for="appointment-time">Время</label>
+                <input id="appointment-time" type="text" name="time" placeholder="10:00">
+            </p>
+
+            <p>
+                <label for="appointment-name">Ваше имя</label>
+                <input id="appointment-name" type="text" name="name" placeholder="Борода">
+            </p>
+
+            <p>
+                <label for="appointment-phone">Телефон</label>
+                <input type="text" name="phone" id="appointment-phone" placeholder="+38 000 0000000">
+            </p>
+            <button type="submit">Отправить</button>
+        </form>
     </section>
 
 </main>   
@@ -120,6 +142,21 @@
         <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
         <p>ВВедите пожалуйста свой логин и пароль</p>
         <!--ФОрма логина-->
+        <form action="http://echo.htmlacademy.ru" method="POST">
+        <p>
+            <label for="login-login">Логин</label>
+            <input id="login-login" type="email" name="login" placeholder="email@example.com">
+        </p>
+        <p>
+            <label for="login-password">Пароль</label>
+            <input id="login-password" type="password" name="password" placeholder="********">
+        </p>
+        </form>
+        <p>
+            <label for="remember-checkbox">Запомните меня</label>
+            <input id="remember-checkbox" type="checkbox" name="remember">
+            <a href="#">Я забыл пароль</a>
+        </p>
         <button type="button">Закрыть</button>
     </section>
 
